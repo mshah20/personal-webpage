@@ -1,0 +1,81 @@
+#contact-body {
+  height: 70vh;
+  min-height: 400px;
+  background-image: linear-gradient(90deg, var(--darkblue) 5%, #000000 75% );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-header {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.me {
+  color: var(--blue);
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  display: flex;
+}
+
+.social-icon {
+  height: 60px;
+  width: 60px;
+  margin: 0 15px;
+
+  animation: ease-in-out;
+  transition: 0.5s;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  transform: scale(1.25);
+}
+
+.social-icon:hover .svg-path,
+.social-icon:focus .svg-path {
+  fill: var(--white);
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  z-index: -1;
+  background-color: var(--blue);
+  transition: transform 250ms ease-in-out;
+
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.social-icon:hover::before,
+.social-icon:focus::before {
+  background-color: var(--white);
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.svg-path {
+  fill: var(--blue);
+}
+
+.social-link {
+  color: var(--white);
+}
