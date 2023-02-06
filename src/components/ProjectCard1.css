@@ -165,6 +165,13 @@
     box-shadow: 1px 1px 1px 5px #121212;
   }
 
+  .image-container::before {
+    left: -5px;
+    bottom: -5px;
+    height: 190px;
+    width: 335px;
+  }
+
   .card-title {
     margin-top: -265px;
     margin-bottom: 205px;
