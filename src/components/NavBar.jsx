@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './NavBar.css';
+import logo from "../media/logo.png";
 
 const NavBar = () => {
 
@@ -30,7 +31,7 @@ const NavBar = () => {
 
   return(
     <nav style={{display: showNav ? '' : 'none'}}>
-      <a href="#welcome-body"><img src={"media/logo.png"} alt="Logo" className="logo"/></a>
+      <a href="#welcome-body"><img src={logo} alt="Logo" className="logo"/></a>
       <ul>
         <li className="nav-link"><a href="#welcome-body"><b>Welcome</b></a></li>
         <li className="nav-link"><a href="#work-body"><b>Work</b></a></li>
