@@ -27,7 +27,7 @@ const ProjectCard1 = ({ image, title, description, skills, link }) => {
         </p>
         <ul className={`card-skills ${inView ? "fade-in-1s" : null}`}>
           {skills.map(skill =>
-            <li><strong>{skill}</strong></li>
+            <li key={skill}><strong>{skill}</strong></li>
           )}
         </ul>
       </div>

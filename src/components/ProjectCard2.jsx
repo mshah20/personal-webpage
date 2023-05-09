@@ -22,7 +22,7 @@ const ProjectCard2 = ({ image, title, description, skills, link }) => {
         </p>
         <ul className="card2-skills">
           {skills.map(skill =>
-            <li><strong>{skill}</strong></li>
+            <li key={skill}><strong>{skill}</strong></li>
           )}
         </ul>
       </div>
